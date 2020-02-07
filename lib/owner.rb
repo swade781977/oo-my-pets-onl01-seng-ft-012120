@@ -27,7 +27,7 @@ class Owner
   end 
   
   def buy_cat(name)
-    Cat.all.each{|cat| cat.owner = self if cat.name == name}
+    Cat.all.find{|cat| cat.owner = self if cat.name == name}
   end
   
   def self.all
