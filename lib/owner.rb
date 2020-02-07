@@ -16,7 +16,8 @@ class Owner
   
   def cats 
     cats = []
-     if Cat.all.
+     Cat.all.each do |cat|
+       if 
 
   
   def self.all
