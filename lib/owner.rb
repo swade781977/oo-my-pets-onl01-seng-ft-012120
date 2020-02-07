@@ -6,7 +6,7 @@ class Owner
     @species = "human"
     @@all << self
   end 
-  
+  binding.pry
   attr_reader :name, :species 
   
   def say_species
@@ -15,6 +15,7 @@ class Owner
   end
   
   def cats 
+    owner = self
     cats = []
      Cat.all.each do |cat|
        if 
