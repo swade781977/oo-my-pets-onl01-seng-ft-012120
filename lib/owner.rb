@@ -6,7 +6,7 @@ class Owner
     @species = "human"
     @@all << self
   end 
-  binding.pry
+
   attr_reader :name, :species 
   
   def say_species
