@@ -10,4 +10,7 @@ class Cat
   attr_reader :name 
   attr_accessor :mood, :owner
   
+  def self.all
+    @@all
+  end
 end
