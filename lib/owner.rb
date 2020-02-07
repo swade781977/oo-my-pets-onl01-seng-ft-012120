@@ -15,10 +15,7 @@ class Owner
   end
   
   def cats 
-    owner = self
-    cats = []
-     Cat.all.each do |cat|
-       if 
+    Cats.all.find_all
 
   
   def self.all
