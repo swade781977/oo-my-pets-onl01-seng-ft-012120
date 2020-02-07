@@ -31,6 +31,7 @@ class Owner
       if cat.name == name
         cat.owner = self
       end
+    end
   end
   
   def self.all
