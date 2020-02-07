@@ -16,7 +16,7 @@ class Owner
   
   def cats 
     cats = []
-    if 
+     if Cat.all.
 
   
   def self.all
