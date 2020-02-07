@@ -15,8 +15,8 @@ class Owner
   end
   
   def cats 
-    Cats.all.find_all
-
+    arr =[]
+    Cat::all.each{|cat| arr << cat.name if cat.name == self}
   
   def self.all
     @@all
