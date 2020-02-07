@@ -17,7 +17,8 @@ class Owner
   def cats 
     arr =[]
     Cat.all.each{|cat| arr << cat if cat.name == self}
-    arr 
+    arr
+    binding.pry
   end 
   
   def self.all
