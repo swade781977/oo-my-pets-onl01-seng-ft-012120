@@ -18,7 +18,6 @@ class Owner
     arr =[]
     Cat.all.each{|cat| arr << cat if cat.owner == self}
     arr
-    binding.pry
   end 
   
   def self.all
