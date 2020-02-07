@@ -14,6 +14,12 @@ class Owner
    a
   end
   
+  def dogs 
+    arr =[]
+    Dog.all.each{|dog| arr << dog if dog.owner == self}
+    arr
+  end
+  
   def cats 
     arr =[]
     Cat.all.each{|cat| arr << cat if cat.owner == self}
