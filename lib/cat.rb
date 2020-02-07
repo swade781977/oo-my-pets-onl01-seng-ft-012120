@@ -10,11 +10,6 @@ class Cat
   attr_reader :name 
   attr_accessor :mood, :owner
   
-  def owners_cats(name) 
-    arr =[]
-    all.each{|cat| arr << cat if cat.name == name}
-    arr 
-  end 
   
   def self.all
     @@all
@@ -22,8 +17,4 @@ class Cat
 end
 
 
-paws = Cat.new("paws", "bob")
-spot = Cat.new("spot", "rick")
-dog = Cat.new("dog", "bob")
-t =[]
-t= owners_cats("bob")
+
