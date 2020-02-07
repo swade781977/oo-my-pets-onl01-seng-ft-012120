@@ -10,6 +10,9 @@ class Cat
   attr_reader :name 
   attr_accessor :mood, :owner
   
+  def cats_for owners(name)
+    @@all.each{
+  
   def self.all
     @@all
   end
