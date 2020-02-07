@@ -13,6 +13,10 @@ class Owner
    a ="I am a human."
    a
   end
+  
+  def cats 
+    cats = []
+    if 
 
   
   def self.all
